@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIVR - Moral Dilemmas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="how-it-works visible" id="intro-screen">
+    <h2>How it works</h2>
+    <p>Users will be given a moral dilemma or asked to make a donation. They will then make a choice based on the prompt by swiping one way or the other.</p>
+    
+    <div class="swipe-arrows">
+      <div class="arrow arrow-left">↑</div>
+      <div class="arrow arrow-right">↑</div>
+    </div>
+    
+    <div class="choice-icons">
+      <div class="choice-icon">
+        <div class="icon-circle no">✕</div>
+        <div>Swipe left for "no"</div>
+      </div>
+      <div class="choice-icon">
+        <div class="icon-circle yes">♥</div>
+        <div>Swipe right for "yes"</div>
+      </div>
+    </div>
+    
+    <button class="start-button" id="start-button">Start</button>
+  </div>
+
+  <div class="app-container" id="app-container" style="display: none;">
+    <div class="header">
+      <div class="logo">
+        <div class="piggy-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M19 5c-4-2-8-2-12 0-3 1-5 4-5 7 0 2 1 4 2 5l-2 4h3l1-2h14l1 2h3l-2-4c1-1 2-3 2-5 0-3-2-6-5-7z"></path>
+            <circle cx="7" cy="10" r="1"></circle>
+          </svg>
+          <span class="dollar-sign">$</span>
+        </div>
+        GIVR
+      </div>
+    </div>
+
+    <div class="card-container" id="card-container">
+      <!-- Cards will be inserted here dynamically -->
+    </div>
+
+    <div class="swipe-buttons">
+      <button class="swipe-button no" id="no-button">✕</button>
+      <button class="swipe-button yes" id="yes-button">♥</button>
+    </div>
+
+    <div class="swipe-labels">
+      <div>No</div>
+      <div>Yes</div>
+    </div>
+
+    <div class="nav-arrows">
+      <div class="nav-arrow">←</div>
+      <div class="nav-arrow">→</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
